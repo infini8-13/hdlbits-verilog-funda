@@ -4,7 +4,8 @@ module top_module(
     input sel,
     output [99:0] out );
     
-	assign out = sel ? b : a;
-    //assign out = (~{100{sel}} & a) | ({100{sel}} & b);
-    
+    assign out = sel ? b : a;
+  //assign out = (~{100{sel}} & a) | ({100{sel}} & b);
+  //Synthesis of both the above statements lead to same schematic
+	
 endmodule
