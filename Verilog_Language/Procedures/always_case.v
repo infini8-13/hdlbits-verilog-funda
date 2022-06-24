@@ -18,6 +18,7 @@ module top_module (
             3'b100: out = data4;
             3'b101: out = data5;
      	    default: out = 3'b0;
+        endcase    
     end
 
 endmodule
