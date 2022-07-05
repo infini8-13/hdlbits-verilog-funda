@@ -6,6 +6,8 @@ module top_module (
     
     wire [2:0]cout;
     
+    //The below code can be done in one line too.
+    // assign sum = x+y;
     fadd f0(.a(x[0]),
             .b(y[0]),
             .cin(1'b0),
