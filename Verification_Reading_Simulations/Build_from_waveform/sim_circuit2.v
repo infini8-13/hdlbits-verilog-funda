@@ -5,6 +5,6 @@ module top_module (
     input d,
     output q );//
 
-    assign q = ~(a^b^c^d); // Fix me
+    assign q = ~(a^b^c^d); // Determined by even number of 1's whenever output is 1. Satisfied all conditions-hence XNOR.
 
 endmodule
